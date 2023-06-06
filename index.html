@@ -1,69 +1,108 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
-    <meta name="viewport"content="width=device-width, initial-scale=1,shrink-to-fit=no ">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no ">
     <title>portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <style>
-        .image {
-          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/bbg1.jpg");
-        }
-    
-        .bio {
-          background-image: url('images/bbg3.gif');
-        }
-      </style>
-  </head>
-  <body>
+        .about{
+    background-image: url('images/bio.gif');
+  }
+    </style>
+</head>
+
+<body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">home</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarText"
-        aria-controls="navbarText"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >about me <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">project</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">contact</a>
-          </li>
-        </ul>
-      </div>
+        <a class="navbar-brand" href="#">home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">about me <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="image">
-      <div class="text-intro">
-        <h1>hello i'm trevor ngugi</h1>
-        <p>and i am a full stack developer</p>
-      </div>
+        <div class="text-intro">
+            <h1>hello i'm trevor ngugi</h1>
+            <p>and i am a full stack developer</p>
+        </div>
     </div>
 
     <div class="about">
-      <h1 class="text-center"><b>about me</b></h1>
+        <h1 class="text-center"><b>about me</b></h1>
+        <img src="images/bbg1.jpg" alt="profile" style="width: 200px; " class='pic'>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <p>I started my coding journey about six months ago and I have loved it all the way.
+                I have worked both in group and solo projects, am confident,risk taker and innovative and always working
+                on myself to improve day by day.
+              </p>
+            </div>
+          </div>
+        
     </div>
 
+    <div class="projects">
+        <h2 class="text-center">projects</h2>
+        <!-- cop from here -->
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <a href="">
+                    <h3> project name</h3>
+                    <img src="" alt="profile" style="width:300px" class="pic">
+                </a>
+            </div>
+        </div>
+        <!-- until yjere -->
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <a href="">
+                    <h3> project name</h3>
+                    <img src="" alt="profile" style="width:300px" class="pic">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h3>Contact Form</h3>
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    
+
     <script src="js/script.js"></script>
-   
-  </body>
+
+</body>
+
 </html>
