@@ -2,22 +2,23 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no ">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no " />
     <title>portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <style>
-        .about{
-    background-image: url('images/bio.gif');
-  }
+        /* .about {
+            background-image: url("images/bio.gif");
+        } */
     </style>
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">home</a>
+        <a class="navbar-brand" href="#home-section">home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -25,84 +26,143 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">about me <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#about-section">about me <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">project</a>
+                    <a class="nav-link" href="#project-section">project</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">contact</a>
+                    <a class="nav-link" href="#contact-section">contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <div class="image">
-        <div class="text-intro">
-            <h1>hello i'm trevor ngugi</h1>
-            <p>and i am a full stack developer</p>
+        <div id="home-section">
+            <div class="text-intro">
+                <h1>Hello I'm <span class="name-text"> Trevor Ngugi</h1></span>
+                <p id="occupation">status</p>
+            </div>
         </div>
     </div>
 
-    <div class="about">
-        <h1 class="text-center"><b>about me</b></h1>
-        <img src="images/bbg1.jpg" alt="profile" style="width: 200px; " class='pic'>
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-              <p>I started my coding journey about six months ago and I have loved it all the way.
-                I have worked both in group and solo projects, am confident,risk taker and innovative and always working
-                on myself to improve day by day.
-              </p>
+    <div id="about-section">
+        <div class="about">
+            <h1 class="text-center"><b>about me</b></h1>
+            <img src="images/profile.jpeg" alt="profile" style="width: 200px" class="pic" />
+            <div class="row">
+                <div class="col-sm-4">
+
+                    <img src="images/interest.png" alt="profile" style="width: 200px" class="pic" />
+
+                    <h1>school</h1>
+                    <p>currently doing BBIT at strathmore university</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/resume.png" alt="profile" style="width: 200px" class="pic" />
+                    <h1>skills</h1>
+                    <ul>
+                        <li>php</li>
+                        <li>python</li>
+                        <li>java</li>
+                        <li>C#</li>
+                        <li>C++</li>
+                        <li>kotlin</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <img src="images/studies.png" alt="profile" style="width: 200px" class="pic" />
+                    <h1>interest</h1>
+                    <p>i like playing football</p>
+                    <p>hiking</p>
+                    <p>swimming</p>
+                </div>
             </div>
+        </div>
+    </div>
+
+    <div id="project-section">
+        <div class="projects">
+            <h2 class="text-center">projects</h2>
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <a href="https://trevor-ngugi.github.io/dad-joke-generator/">
+                        <h3>dad joke genereator</h3>
+                        <img src="images/dad.png" alt="profile" style="width: 300px;  " class='pic'>
+                    </a>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <a href="https://ngugs-fighting-game.netlify.app/">
+                        <h3>javascript game</h3>
+                        <img src="images/game.png" alt="profile" style="width: 300px; " class='pic'>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                    <a href="https://trevor-ngugi.github.io/traffic-light/">
+                        <h3>traffic lights css</h3>
+                        <img src="images/traaffic.png" alt="profile" style="width: 300px;  " class='pic'>
+                    </a>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <a href="https://trevor-ngugi.github.io/hoverboard//">
+                        <h3>hoverboard js  website</h3>
+                        <img src="images/hoverboard.png" alt="profile" style="width: 300px; " class='pic'>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="contact-section">
+        <div class="container">
+            <h3>Contact Form</h3>
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+
+                <label for="country">Country</label>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height: 200px"></textarea>
+
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h1 class="text-center">You can find me via</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="https://github.com/">
+              <img src="images/github.png" alt="github" style="width: 200px; " class='pic'></i>
+            </a>
           </div>
-        
-    </div>
-
-    <div class="projects">
-        <h2 class="text-center">projects</h2>
-        <!-- cop from here -->
-        <div class="row">
-            <div class="col-md-6 col-xs-12">
-                <a href="">
-                    <h3> project name</h3>
-                    <img src="" alt="profile" style="width:300px" class="pic">
-                </a>
-            </div>
+          <div class="col-md-4">
+            <a href="mailto:trevorngugigatonye@gmail.com">
+              <img src="images/email.png" alt="email" style="width: 200px; " class='pic'>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://www.linkedin.com/in/trevor-ngugi-390aa8168/">
+              <img src="images/linkedin.jpg" alt="profile" style="width: 200px; " class='pic'>
+            </a>
+          </div>
         </div>
-        <!-- until yjere -->
-        <div class="row">
-            <div class="col-md-6 col-xs-12">
-                <a href="">
-                    <h3> project name</h3>
-                    <img src="" alt="profile" style="width:300px" class="pic">
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="container">
-        <h3>Contact Form</h3>
-        <form action="/action_page.php">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      
-          <label for="country">Country</label>
-          
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      
-          <input type="submit" value="Submit">
-        </form>
       </div>
-    
+      <footer>
+        <p> `@ 2023 All Rights Reserved. Trevor Ngugi.`</p>
+      </footer>
 
     <script src="js/script.js"></script>
-
 </body>
 
 </html>
