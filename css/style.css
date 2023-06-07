@@ -45,14 +45,14 @@ html {
 }
 
 .projects {
-  background-color: #c62c3c;
-  color: ivory;
+  background-color: #fef6e4;
+  color: #001858;
   padding-bottom: 5%;
 }
 
 .projects h3 {
   text-align: center;
-  color: ivory;
+  color: #001858;
 }
 .projects img {
   display: block;
